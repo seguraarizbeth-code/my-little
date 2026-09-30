@@ -1,0 +1,262 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+
+<head> 
+    <meta charset="UTF-8"> 
+    <title>Estructura con Columnas</title> 
+
+    <style> 
+
+        header { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            background-color: #accef5; 
+            padding: 10px 20px; 
+        } 
+
+        .barra-navegacion { 
+            display: flex; 
+            gap: 15px; 
+            margin-top: 10px; 
+        } 
+
+        .boton-nav { 
+            text-decoration: none; 
+            color: mediumpurple; 
+            background-color: rgb(120, 243, 243); 
+            padding: 6px 12px; 
+            border-radius: 4px; 
+            font-size: 14px; 
+            font-family: sans-serif; 
+            transition: background-color 0.3s; 
+        } 
+        
+        .boton-nav:hover { 
+            background-color: mediumpurple; 
+            color: aliceblue; 
+        } 
+
+        .boton-nav.activo { 
+            background-color: rgb(188, 255, 252); 
+            color: rgb(103, 234, 244); 
+            font-weight: bold; 
+        } 
+
+
+        /* Logo pequeño de la cabecera */
+
+        .logo-pequeno { 
+            width: 100px; 
+            height: auto; 
+            display: block; 
+        } 
+
+
+        /* Imagen de la cabecera */
+
+        .logo-cabecera { 
+            max-width: 100%; 
+            height: auto; 
+            display: block; 
+            margin-bottom: 15px; 
+        } 
+
+
+        /* CONTENEDOR PRINCIPAL */
+
+        main { 
+            display: flex;
+            width: 100%;
+            box-sizing: border-box;
+            gap: 15px;
+            padding: 20px;
+            align-items: stretch;
+        }
+
+
+        /* COLUMNA DEL ANUNCIO */
+
+        aside { 
+            width: 25%; 
+            background-color: #92d0ec; 
+            padding: 15px; 
+            box-sizing: border-box;
+        } 
+
+
+        /* COLUMNA DEL CONTENIDO */
+
+        section { 
+            width: 75%; 
+            background-color: #eeaeb9; 
+            padding: 30px;
+            box-sizing: border-box;
+        }
+
+
+        /* TÍTULO DEL CONTENIDO */
+
+        section h2 { 
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+
+        /* TEXTO */
+
+       section p {
+    text-align: justify;
+    line-height: 1.5;
+    max-width: 850px;
+    margin: 0;
+    font-size: 18px;
+    font-family: Georgia, serif;
+}
+
+
+        /* IMAGEN DEL ANUNCIO */
+
+        .anuncio-lateral img { 
+            width: 100%; 
+            height: 700px; 
+            object-fit: cover; 
+            border-radius: 10px; 
+            display: block; 
+        }
+
+
+        /* PIE DE PÁGINA */
+
+        footer {
+            padding: 10px 20px;
+        }
+        footer {
+    background-color: #f6f8f8;
+    text-align: center;
+    padding: 15px;
+}
+
+footer a {
+    color: rgb(170, 33, 85);
+    text-decoration: none;
+}
+
+.logo-instagram {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-left: 5px;
+    margin-right: 3px;
+}
+       /*Imagen de insta*/
+        .logo-instagram {
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.titulo-anuncio{
+    color: azure;
+    line-height: 1.5;
+    max-width: 850px;
+    margin: 0;
+    font-size: 18px;
+    font-family: Georgia, serif;
+}
+    </style> 
+</head> 
+
+
+<body> 
+
+    <header> 
+
+        <div> 
+
+            <h1 style="margin: 0;">My Little Pony</h1> 
+
+            <nav class="Menú de navegación"> 
+
+                <a href="index.html" class="boton-nav activo">Rainbow Dash</a> 
+                <a href="semantica2.html" class="boton-nav">Fluttershy</a> 
+                <a href="semantica3.html" class="boton-nav">Amistad</a> 
+
+            </nav> 
+
+        </div> 
+
+        <img src="imagenes/rainbow.jpg" 
+             alt="Logo de Mi Sitio Web" 
+             class="logo-pequeno"> 
+
+    </header> 
+
+
+    <main> 
+
+        <!-- ANUNCIO -->
+
+        <aside class="anuncio-lateral"> 
+<a class="titulo-anuncio"><h3>¡Adquiere tu nuevo Iphone 17 Pro!</h3></a>
+             
+
+            <img src="imagenes/anunc.jpg" 
+                 alt="Anuncio"> 
+
+        </aside> 
+
+
+        <!-- CONTENIDO -->
+
+        <section> 
+
+            <article> 
+
+                <h2>🌈Rainbow Dash🌈</h2> 
+
+                <p>
+                    Rainbow Dash, es una poni pegaso y una de las personajes principales de My Little Pony: 
+                    La Magia de la Amistad ya que aparece casi en todos los capítulos. Su trabajo es despejar 
+                    el cielo de Ponyville. Ella es una fanática de Los Wonderbolts, y su gran sueño es 
+                    pertenecer a ese grupo de élite algún día, sueño que se cumplió en Dash La Novata. 
+                    En La Rain-plosión Sónica tanto Rarity como la Princesa Celestia, la declaran la mejor 
+                    voladora de toda Equestria ya que muestra un gran valor por la lealtad, pues por lo cual 
+                    demuestra optimismo. Representa el Elemento de la Lealtad. Ella fue la última de entre 
+                    las seis personajes principales en conseguir una mascota, la suya es una tortuga mascota 
+                    llamada Tanque, que fue presentada y domesticada por Rainbow en ¡Que Gane la Mejor Mascota!.
+                    El significado de su nombre es: Rainbow = Arco iris, Dash: Rápido; su nombre significaría 
+                    traducido Arco iris Rápido.
+                   </p> 
+
+                   <p class="dato-especial">
+                    • Dato especial: Rainbow Dash puede parecer muy fuerte por fuera, pero una de las cosas que más 
+                    valora en su vida es saber que sus amigas siempre estarán a su lado. 💙🌈</p>
+                </p>
+
+            </article> 
+
+        </section> 
+
+    </main> 
+
+
+    <footer> 
+        <footer> 
+    <p>
+        creado por: seguraarizbeth@gmail.com
+        Instagram:
+        
+        <a href="https://www.instagram.com/ghosteuni/" target="_blank">
+            <img src="imagenes/instagram.png" 
+                 alt="Instagram" 
+                 class="logo-instagram">
+            @ghosteuni
+        </a>
+    </p>
+</footer>
+    </footer> 
+
+</body> 
+
+</html>
