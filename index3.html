@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Estructura con Columnas</title>
+
+    <style>
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fdff71;
+            padding: 10px 20px;
+        }
+
+        .barra-navegacion {
+            display: flex;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .boton-nav {
+            text-decoration: none;
+            color: mediumpurple;
+            background-color: rgb(120, 243, 243);
+            padding: 6px 12px;
+            border-radius: 4px;
+            font-size: 14px;
+            font-family: sans-serif;
+            transition: background-color 0.3s;
+        }
+
+        .boton-nav:hover {
+            background-color: mediumpurple;
+            color: aliceblue;
+        }
+
+        .boton-nav.activo {
+            background-color: rgb(188, 255, 252);
+            color: rgb(103, 234, 244);
+            font-weight: bold;
+        }
+
+        /* LOGO */
+        .logo-pequeno {
+            width: 130px;
+            height: auto;
+            display: block;
+        }
+
+        .logo-cabecera {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        /* CONTENEDOR PRINCIPAL */
+        main {
+            display: flex;
+            width: 100%;
+            box-sizing: border-box;
+            gap: 15px;
+            padding: 20px;
+            align-items: stretch;
+        }
+
+        /* COLUMNA DEL ANUNCIO */
+        aside {
+            width: 25%;
+            background-color: #13dbcb;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+
+        /* COLUMNA DEL CONTENIDO */
+        section {
+            width: 75%;
+            background-color: #befae3;
+            padding: 30px;
+            box-sizing: border-box;
+        }
+
+        /* TÍTULO */
+        section h2 {
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        /* TEXTO */
+        section p {
+            text-align: justify;
+            line-height: 1.5;
+            max-width: 850px;
+            margin: 0;
+        }
+
+        /* ANUNCIO */
+        .anuncio-lateral img {
+            width: 100%;
+            height: 700px;
+            object-fit: cover;
+            border-radius: 10px;
+            display: block;
+        }
+
+        /* PIE DE PÁGINA */
+        footer {
+            background-color: #f6f8f8;
+            text-align: center;
+            padding: 15px;
+        }
+
+        footer a {
+            color: rgb(170, 33, 85);
+            text-decoration: none;
+        }
+
+        /* LOGO DE INSTAGRAM */
+        .logo-instagram {
+            width: 25px;
+            height: 25px;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+        /*Imagen de insta*/
+        .logo-instagram {
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.titulo-anuncio{
+    color: azure;
+    line-height: 1.5;
+    max-width: 850px;
+    margin: 0;
+    font-size: 18px;
+    font-family: Georgia, serif;
+}
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <div>
+
+            <h1 style="margin: 0;">My Little Pony</h1>
+
+            <nav class="barra-navegacion">
+
+                <a href="index.html" class="boton-nav activo">Rainbow Dash</a>
+                <a href="semantica2.html" class="boton-nav">Fluttershy</a>
+                <a href="semantica3.html" class="boton-nav">Amistad</a>
+
+            </nav>
+
+        </div>
+
+        <img src="SEGURA/imagenes/amistad.jpg"
+             alt="Logo de Mi Sitio Web"
+             class="logo-pequeno">
+
+    </header>
+
+    <main>
+
+        <aside class="anuncio-lateral">
+
+            <a class="titulo-anuncio"><h3>¡Takis que incendian con sabor!</h3></a>
+
+            <img src="SEGURA/imagenes/CHEE.jpg"
+                 alt="Anuncio">
+
+        </aside>
+
+        <section>
+
+            <article>
+
+                <h2>🍥Rainbow Dash y Fluttershy🌈</h2>
+                <p>
+                    Rainbow Dash es una Pegaso conocida por su increíble velocidad,
+                    su valentía y su personalidad aventurera. Desde pequeña soñaba
+                    con ser una gran voladora y admiraba a los Wonderbolts, por lo
+                    que siempre intentaba mejorar sus habilidades. Es muy competitiva
+                    y le encanta demostrar lo rápida que puede ser, pero también es 
+                    extremadamente leal con sus amigas. Uno de sus momentos más importantes 
+                    fue realizar el Sonic Rainboom, un arcoíris que apareció en el cielo y 
+                    que terminó conectando su destino con el de varias de sus futuras amigas. </p>
+                    <p>Rainbow también tiene una gran pasión por los deportes, las carreras
+                    y cualquier desafío que le permita demostrar lo que puede hacer. 
+                    Aunque a veces intenta aparentar que nada le da miedo, en realidad 
+                    se preocupa muchísimo por las personas que quiere.</p>
+                    <p>• Dato curioso: 
+                    Rainbow Dash tiene una de las personalidades más seguras de Equestria, 
+                    pero cuando se trata de sus amigas puede volverse mucho más sensible de 
+                    lo que le gusta admitir. 💙🌈</p>
+                    <p>• Dato curioso: 
+                    Fluttershy demuestra que la valentía no siempre consiste en correr hacia
+                    el peligro; a veces también significa vencer la timidez, defender a tus
+                    amigos y tener el valor de ser tú misma. 🌸🦋💗</p>
+                    <p>• Dato curioso: su amistad es especial porque Rainbow Dash 
+                    le da a Fluttershy un poquito de confianza y aventura, mientras Fluttershy 
+                     le recuerda a Rainbow que incluso la poni más rápida necesita un lugar
+                     tranquilo donde sentirse querida y comprendida. 🌈🦋💕
+
+                </p>
+                <p class="dato-especial">
+    • Dato curioso: Rainbow Dash tiene una de las personalidades más seguras...
+</p>
+            </article>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+            creado por: seguraarizbeth@gmail.com
+            Instagram:
+
+            <a href="https://www.instagram.com/ghosteuni/" target="_blank">
+                <img src="SEGURA/imagenes/instagram.png"
+                     alt="Instagram"
+                     class="logo-instagram">
+                @ghosteuni
+            </a>
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
+
